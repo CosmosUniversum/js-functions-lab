@@ -48,17 +48,11 @@ Exercise 3:
 function isCharAVowel(char) {
 if (char.toLowerCase() == 'a' || char.toLowerCase() == 'e' || char.toLowerCase() == 'i' || char.toLowerCase() == 'o' || char.toLowerCase() == 'u') {
     return true
-  // else return false
     } else {
         return false
       }
-    }
-    // if the condition is true return true
-    // 
-    // 
-    // 
-    // return true or false
-    
+}
+
 
 console.log(
 `Exercise 3 Result:
@@ -152,14 +146,20 @@ console.log(
 longestStringInArray(["Please", "do", "not", "pet", "the", "taco", "cat"])
 )
 
-// /* 
-// Exercise 9: 
-//   - Define a function, as a function declaration, `stringsLongerThan` that takes an array of strings and a number as arguments; and returns an array of the strings that are longer than the number passed in. For example, `stringsLongerThan(['say', 'hello', 'in', 'the', 'morning'], 3);` would return `["hello", "morning"]`.
-// */
+/* 
+Exercise 9: 
+  - Define a function, as a function declaration, `stringsLongerThan` that takes an array of strings and a number as arguments; and returns an array of the strings that are longer than the number passed in. For example, `stringsLongerThan(['say', 'hello', 'in', 'the', 'morning'], 3);` would return `["hello", "morning"]`.
+*/
+function stringsLongerThan(strings, num) {
+  result = []
+  strings.forEach((string) => {
+    if (string.length > num)
+      result.push(string)
+    })
+  return result
+}
 
-
-
-// console.log(
-//   "Exercise 9 Result:\n",
-//   stringsLongerThan(["say", "goodnight", "whenever", "you", "like"], 3)  
-// )
+console.log(
+  "Exercise 9 Result:\n",
+  stringsLongerThan(["say", "goodnight", "whenever", "you", "like"], 3)  
+)
