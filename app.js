@@ -133,6 +133,7 @@ console.log("Exercise 7 Result:\n", reverseString("!stratpoP taeh ton oD"))
 Exercise 8:
   - Define a function, as a function expression, `longestStringInArray` that takes an array of strings as an argument and returns the longest string's length.
 */
+// 
 longestStringInArray = function(str) {
   longestString = str.reduce(function(longest, curr) {
     return curr.length > longest.length ? curr : longest
